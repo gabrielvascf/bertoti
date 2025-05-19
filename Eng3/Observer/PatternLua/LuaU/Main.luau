@@ -1,0 +1,6 @@
+local Loja = require("./Loja")
+local Cliente = require("./Cliente")
+local loja = Loja.new()
+local cliente1 = Cliente.new("João")
+loja.publisher:subscribe(cliente1, cliente1:onNewProductEvent())
+loja:addProduct({ name = "Cadeira" })
