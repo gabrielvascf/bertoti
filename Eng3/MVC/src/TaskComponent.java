@@ -2,40 +2,20 @@ package src;
 
 import java.util.List;
 
-abstract class TaskComponent {
-    protected String description;
+public interface TaskComponent {
+    void add(TaskComponent task);
 
-    public TaskComponent(String description) {
-        this.description = description;
-    }
+    void remove(TaskComponent task);
 
-    public void add(TaskComponent task) {
-        throw new UnsupportedOperationException();
-    }
+    List<TaskComponent> getChildren();
 
-    public void remove(TaskComponent task) {
-        throw new UnsupportedOperationException();
-    }
+    int getPriority();
 
-    public List<TaskComponent> getChildren() {
-        throw new UnsupportedOperationException();
-    }
-    
-    public int getPriority() {
-        throw new UnsupportedOperationException();
-    }
+    boolean isCompleted();
 
-    public boolean isCompleted() {
-        return false;
-    }
+    void setCompleted(boolean completed);
 
-    public void setCompleted(boolean completed) {
-        throw new UnsupportedOperationException();
-    }
+    void sort(SortingStrategy strategy);
 
-    public void sort(SortingStrategy strategy) {
-        // Implementação padrão para folhas
-    }
-
-    public abstract String getDescription();
+    String getDescription();
 }
