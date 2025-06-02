@@ -25,8 +25,23 @@ class TaskModel {
     }
 
     public void removeTask(TaskComponent task) {
-        root.remove(task);
+        removeRecursively(root, task);
         notifyObservers();
+    }
+
+    private boolean removeRecursively(TaskComponent parent, TaskComponent toRemove) {
+        if (parent instanceof TaskFolder) {
+            TaskFolder folder = (TaskFolder) parent;
+            if (folder.getChildren().remove(toRemove)) {
+                return true;
+            }
+            for (TaskComponent child : new ArrayList<>(folder.getChildren())) {
+                if (removeRecursively(child, toRemove)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     public TaskComponent getRoot() {

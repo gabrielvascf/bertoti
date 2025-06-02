@@ -31,7 +31,7 @@ class TaskView extends JFrame implements TaskObserver {
         setSize(500, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
-        // Painel de controles
+
         JPanel controlPanel = new JPanel(new FlowLayout());
         controlPanel.add(addTaskBtn);
         controlPanel.add(addFolderBtn);
@@ -40,7 +40,7 @@ class TaskView extends JFrame implements TaskObserver {
         controlPanel.add(new JLabel("Ordenar por:"));
         controlPanel.add(sortCombo);
 
-        // Lista de tarefas
+
         JScrollPane scrollPane = new JScrollPane(taskList);
 
         add(controlPanel, BorderLayout.NORTH);
@@ -48,7 +48,7 @@ class TaskView extends JFrame implements TaskObserver {
 
         taskList.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                if (evt.getClickCount() == 2) { // Só expande/recolhe com duplo clique
+                if (evt.getClickCount() == 2) {
                     int index = taskList.locationToIndex(evt.getPoint());
                     if (index != -1) {
                         TaskComponent comp = TaskController.getModel().getComponentByIndex(index);

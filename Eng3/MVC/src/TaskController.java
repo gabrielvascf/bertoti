@@ -80,7 +80,6 @@ class TaskController {
             if (comp instanceof Task) {
                 Task task = (Task) comp;
                 task.setCompleted(!task.isCompleted());
-                // Apenas notifica a view, sem remover/adicionar na raiz
                 model.notifyObservers();
             }
             view.getSortCombo().getSelectedItem();
