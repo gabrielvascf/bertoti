@@ -177,191 +177,119 @@ Fui o responsável por projetar e criar a estrutura do banco de dados relacional
 
 **Resiliência**: Enfrentei desafios técnicos e prazos apertados, aprendendo a gerenciar a pressão e a buscar soluções eficazes para os problemas que surgiram ao longo do projeto.
 
+### Em 2024-1 
 
+## Sistema Intuitivo para Gestão de Projetos de Pesquisa e Desenvolvimento Tecnológico
 
-
-### Em 2023-2 
-
-## Oracle Partner Tracker
-
-### Empresa Parceira: [Oracle](https://www.oracle.com/)
+### Empresa Parceira: [FAPG](https://fapg.org.br/)
 
 ### Problema:
-A Oracle enfrenta dificuldades na gestão e análise eficiente dos dados provenientes do sistema OPN (Oracle PartnerNetwork) das empresas parceiras. A ausência de uma plataforma moderna compromete a visualização inteligente dessas informações, dificultando a identificação de melhorias e a tomada de decisões estratégicas.
-
+A FAPG enfrenta desafios para gerenciar os seus projetos de pesquisa, necessitando de uma solução que simplifique e otimize esse processo, substituindo controles descentralizados por uma plataforma unificada.
 
 ### Solução Entregue pela Equipe:
-A Oracle Partner Tracker é uma plataforma moderna e inteligente de gerenciamento e análise de dados, capaz de interpretar, organizar e representar os dados do sistema OPN da empresa parceira Oracle. Entre os objetivos principais do projeto, se encontram a modernização do acompanhamento das empresas parceiras Oracle, assim como a visualização de dados de forma inteligente, para facilitar a identificação de melhorias e de conclusões estratégicas.
+Foi desenvolvido um sistema web intuitivo que permite a gestão completa de projetos e suas respectivas atividades, garantindo eficiência e transparência no acompanhamento pelos partícipes. O sistema também integra uma interface conversacional baseada em Inteligência Artificial para facilitar operações e extração de dados.
 
-[Repositório do Projeto ](https://github.com/codecatss/API-BD4)
+[Repositório do Projeto](https://github.com/gabrielvascf/fatec-api-ads-4)
 
 #### Tecnologias Utilizadas
 >
-
-> - **Java**: Essencial para o desenvolvimento do backend do sistema de gestão de horas extras e sobreavisos.
-> - **Spring Boot**: Facilita a configuração e o desenvolvimento de aplicativos Java, permitindo uma rápida implementação de serviços web e RESTful.
-> - **Vue**: Utilizado para desenvolver a lógica do lado do cliente, interatividade e dinamismo na interface do usuário.
-
-> - **Git e Github**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
-
-> - **MySQL**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
-
-
+> - **TypeScript**: Linguagem principal utilizada para garantir tipagem e segurança em todo o stack.
+> - **Node.js & Next.js**: Utilizados para o desenvolvimento do servidor backend e da aplicação frontend (React), oferecendo renderização eficiente e criação ágil de APIs.
+> - **Prisma**: ORM moderno adotado para facilitar a comunicação e modelagem de dados com o banco.
+> - **MySQL**: Banco de dados relacional escolhido para armazenar os projetos, atividades e usuários.
+> - **LangChain & Ollama**: Ferramentas empregadas na implementação da interface conversacional de IA utilizando o modelo Qwen3.
 
 #### Contribuições Pessoais
 
 <details>
-  <summary>Mapa do Brasil Integrado a Imagem</summary>
-  <img src="./assets/setupSVG.png" alt="Descrição da imagem">
+  <summary>Atuação como Scrum Master</summary>
   <br>
-Desenvolvi o componente BrazilMap.vue para exibir de forma visual e interativa os dados regionais no contexto do mapa do Brasil. Esse componente Vue opera sobre um SVG do mapa brasileiro, permitindo representar graficamente informações quantitativas para cada estado de maneira clara e acessível.
-
-Ao utilizar o ciclo de vida mounted, o componente executa duas funções principais: setupSVG e setupMap. A função setupSVG é responsável por associar os dados estáticos (como nome do estado e valor numérico) aos elementos SVG que representam cada estado no mapa. Já a função setupMap cuida da lógica de coloração, definindo tonalidades de vermelho com base nos valores atribuídos a cada estado — quanto maior o valor, mais escura a tonalidade.
-
-Implementei também interações com o mouse para melhorar a experiência do usuário. Ao passar o cursor sobre um estado, o componente exibe uma info-box dinâmica com detalhes do nome e valor, além de destacar visualmente o estado selecionado. Isso permite uma exploração intuitiva e responsiva do mapa.
-
-O componente é ideal para aplicações que demandam visualização geográfica de indicadores — como dados climáticos, econômicos ou populacionais —, tornando a análise regional mais acessível e visualmente atrativa.
+Desempenhei o papel de Scrum Master da equipe, sendo responsável por facilitar os ritos ágeis (Dailies, Plannings, Reviews e Retrospectives), remover impedimentos técnicos e alinhar as expectativas de entrega junto ao Product Owner e aos desenvolvedores, garantindo a organização e andamento constante das Sprints.
 </details>
 
 <details>
-  <summary>Configuração Do Controller Company</summary>
-  <img src="./assets/CompanyController.png" alt="Descrição da imagem">
+  <summary>Implementação de Inteligência Artificial em TypeScript</summary>
   <br>
-Desenvolvi o CompanyController para gerenciar as operações relacionadas às empresas em nossa aplicação. Esse controlador REST segue o padrão arquitetural RESTful, que permite que o frontend e outras aplicações se comuniquem com o backend de forma simples e padronizada através de requisições HTTP.
-
-Utilizando anotações como @RestController e @RequestMapping com o caminho "/company", defini claramente o ponto de entrada das requisições relacionadas a empresas. Essa organização facilita a manutenção e escalabilidade do sistema, agrupando as funcionalidades por domínio.
-
-O método getAllCompanies foi projetado para recuperar de forma paginada todas as empresas registradas no sistema. Isso garante eficiência na busca e na exibição dos dados, especialmente em cenários com um grande volume de registros. A resposta retorna um Page de CompanyDTO, promovendo uma camada de segurança e desacoplamento entre a entidade de banco e os dados expostos ao cliente.
-
-A integração com o Swagger por meio das anotações @Operation e @ApiResponses fornece uma documentação clara e automática da API. Isso é essencial para o entendimento e consumo da API por outros desenvolvedores, além de ajudar na validação e testes.
-
-A separação da lógica de negócios foi mantida com o uso de um serviço (CompanyService) e de um repositório (CompanyRepository), respeitando os princípios da arquitetura em camadas. Essa abordagem melhora a organização do código, facilita os testes e aumenta a coesão das responsabilidades de cada classe.
+Fui o responsável direto por integrar as funcionalidades de Inteligência Artificial na plataforma. Utilizei LangChain e Ollama rodando localmente (com o modelo Qwen3) para estruturar a interface conversacional. A IA permite executar funções dinâmicas do sistema e extrair parâmetros de forma natural, sem depender de APIs pagas externas.
 </details>
 
 <details>
-  <summary>Função Conectada a API Externa para busca de CNPJ</summary>
-  <img src="./assets/buscarCNPJ.png" alt="Descrição da imagem">
+  <summary>Desenvolvimento de Funcionalidades Fullstack e Componentes Kanban</summary>
   <br>
-Implementei esta função reativa com watchEffect para automatizar a busca e preenchimento dos dados cadastrais de uma empresa com base no CNPJ informado. Esse comportamento foi desenvolvido dentro de um componente Vue.js, utilizando o paradigma reativo para acompanhar mudanças no valor do CNPJ.
-
-Sempre que o campo de CNPJ (accountDataLocal.cnpj) atinge 14 dígitos numéricos válidos, a função é acionada automaticamente. A partir disso, uma requisição HTTP é enviada para a API pública da Speedio, que retorna informações oficiais da Receita Federal sobre o CNPJ informado.
-
-Com os dados recebidos, realizo verificações para garantir que as informações de estado (UF) e cidade (MUNICÍPIO) estejam disponíveis. Quando válidas, essas informações são utilizadas para preencher automaticamente os campos de nome da empresa (RAZAO SOCIAL), estado, cidade e logradouro, proporcionando uma experiência mais fluida e menos propensa a erros de digitação por parte do usuário.
-
-Além disso, o sistema busca dinamicamente a lista de cidades referentes ao estado retornado pela API, atualizando o campo accountDataLocal.cities, o que mantém a interface sempre sincronizada com os dados reais.
-
-Caso os dados retornados estejam incompletos, o sistema limpa os campos relacionados, prevenindo inconsistências. Também há tratamento de erros via .catch, garantindo que falhas na requisição não quebrem a aplicação e sejam devidamente registradas para depuração.
-
-Essa abordagem melhora significativamente a usabilidade e integridade dos dados inseridos no sistema, ao mesmo tempo em que reduz o esforço manual do usuário.
+Atuei fortemente no desenvolvimento do backend e frontend de gestão de projetos. Implementei rotas e serviços para atribuição de tarefas a usuários, fluxos de recuperação de senha e refatorei componentes React de visualização de projetos. Também participei do desenvolvimento do Kanban Board, facilitando a visualização de tarefas a fazer, em andamento e concluídas, além de suas respectivas datas e métricas.
 </details>
-
-
 
 #### Hard Skills
 
-- **Java** : Sei fazer com autonomia
-- **Springboot** : Sei fazer com autonomia
-- **Vue**: Sei fazer com ajuda
-- **MySQL** : Sei fazer com ajuda
+- **TypeScript** : Sei fazer com autonomia
+- **Node.js** : Sei fazer com autonomia
+- **React / Next.js** : Sei fazer com autonomia
+- **Prisma / MySQL** : Sei fazer com autonomia
+- **LangChain / IA** : Sei fazer com autonomia
 
 #### Soft Skills
 
-**Relacionamento com Stakeholders**: Atuei como ponte entre os stakeholders e a equipe de desenvolvimento, garantindo que a visão do produto fosse compreendida e aplicada com clareza. Promovi alinhamentos frequentes com o cliente para entender suas necessidades e convertê-las em requisitos priorizados, assegurando que as entregas estivessem em sintonia com os objetivos estratégicos do negócio. Essa atuação contribuiu para decisões mais ágeis e produtos com maior aderência ao valor esperado.
+**Liderança Servidora**: Como Scrum Master, atuei facilitando o trabalho da equipe, promovendo um ambiente colaborativo e auxiliando na organização técnica do projeto para garantir o cumprimento dos prazos estabelecidos.
 
-**Resolução de Problemas** : Durante o projeto, exercitei minha capacidade de resolução de problemas ao lidar com desafios inesperados, como mudanças de requisitos ou limitações técnicas. Mantive uma postura proativa para entender a raiz dos problemas e colaborar com o time na busca por soluções viáveis. Isso contribuiu para manter o progresso das entregas e preservar o alinhamento com os objetivos do cliente, mesmo diante de imprevistos.
+**Resolução de Problemas Complexos**: Ao enfrentar desafios com a integração de IA local no backend em TypeScript, pesquisei e apliquei soluções utilizando LangChain e Ollama, garantindo o funcionamento do requisito sem uso de serviços externos.
 
-**Pensamento Estratégico**: Apliquei pensamento estratégico ao priorizar funcionalidades com base no valor de negócio, no impacto ao usuário e nos objetivos da empresa. Busquei entender o contexto maior do produto, antecipar riscos e tomar decisões de backlog que garantissem entregas mais relevantes. Essa visão ampla foi essencial para alinhar o desenvolvimento com a estratégia do cliente e gerar mais valor a cada sprint. 
-
-
-
-
-
+**Adaptabilidade**: Realizei uma grande refatoração durante o projeto, transicionando arquiteturas iniciais em Python para um monorepo completamente TypeScript (Node.js), padronizando a base de código e melhorando a manutenibilidade para todo o time.
 
 ### Em 2024-2 
 
-## RecruitDash 
+## Sistema de Mobilidade Urbana
 
-### Empresa Parceira: [Pro4Tech](https://pro4tech.com.br/)
+### Empresa Parceira: Prefeitura de São José dos Campos
 
 ### Problema:
-Atualmente, a empresa enfrenta dificuldades para acompanhar e analisar de forma eficiente os dados relacionados ao processo de recrutamento e seleção. A ausência de uma plataforma centralizada e interativa dificulta o acesso a informações importantes como número de candidatos, tempo médio de contratação e custos envolvidos. Isso compromete a capacidade dos gestores de tomar decisões estratégicas rápidas e informadas. Além disso, a falta de relatórios dinâmicos e personalizáveis limita a análise detalhada por diferentes critérios, prejudicando a identificação de padrões e tendências que poderiam otimizar a eficiência do processo e a alocação dos recursos.
-
-Como resultado, o processo de recrutamento se torna menos eficiente, com desperdício de tempo e recursos, além de dificultar a melhoria contínua baseada em dados confiáveis e atualizados em tempo real.
-
+A Prefeitura necessitava de uma solução eficiente para consolidar e monitorar dados de tráfego urbano em tempo real. A ausência de um sistema centralizado dificultava a visualização de níveis de tráfego, mapas de calor e a emissão de alertas em situações críticas, comprometendo a agilidade na tomada de decisões pelos gestores de mobilidade.
 
 ### Solução Entregue pela Equipe:
-O objetivo da aplicação é um dashboard interativo para centralizar e visualizar dados do processo de recrutamento e seleção de uma empresa. A plataforma permitirá uma análise em tempo real de métricas como número de candidatos, tempo médio de contratação e custos, gerando relatórios dinâmicos que apoiam decisões estratégicas. Além disso, os usuários poderão personalizar relatórios conforme suas necessidades, filtrando informações por critérios relevantes. A ferramenta visa otimizar o processo de recrutamento, identificando padrões e tendências para melhorar a eficiência e alocação de recursos.
+Desenvolvemos o Painel de Mobilidade Urbana, uma plataforma web interativa que consolida dados de radares em dashboards dinâmicos. O projeto possui uma arquitetura distribuída, dividida claramente em um Backend (API RESTful) e um Frontend (Single Page Application). A solução diferencia acessos entre cidadãos (dados públicos) e gestores (dados sensíveis), apresentando filtros por região, mapas de calor e notificações automatizadas de tráfego.
 
-[Repositório do Projeto ](https://github.com/Localhost-305/LocalHost305)
+[Repositório do Projeto](https://github.com/SQLutions-FATEC/API-3-Semestre)
 
 #### Tecnologias Utilizadas
 >
-
-> - **Java**: Essencial para o desenvolvimento do backend do sistema de gestão de pessoas cadastradas para vagas
-> - **Spring Boot**: Facilita a configuração e o desenvolvimento de aplicativos Java, permitindo uma rápida implementação de serviços web e RESTful.
-> - **React**: Utilizado para desenvolver a lógica do lado do cliente, interatividade e dinamismo na interface do usuário.
-
-> - **Git e Github**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
-
-> - **Postgresql**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
-
-> - **Docker**: 
-Utilizado para criar ambientes isolados e padronizados para a aplicação. Com Docker, é possível configurar containers para o backend, frontend e banco de dados, garantindo que todos os membros da equipe trabalhem com a mesma infraestrutura, facilitando o deploy, testes e escalabilidade do sistema.
-
+> - **Java & Spring Boot**: Utilizados no Backend para o desenvolvimento da API RESTful, gerenciamento de regras de negócio, processamento massivo de dados e controle de acessos.
+> - **Vue.js, Vuetify & Vite**: Empregados no Frontend para construir interfaces de usuário modernas e interativas, consumindo os dados da API de forma assíncrona.
+> - **PostgreSQL & Oracle**: Bancos de dados relacionais para armazenamento seguro e consultas de alta performance dos dados de tráfego.
+> - **Docker**: Utilizado para a conteinerização da aplicação, garantindo ambientes isolados e padronizados para o Frontend e Backend.
 
 #### Contribuições Pessoais
 
 <details>
-  <summary>Versionamento De Banco</summary>
-  <img src="./assets/migratioj-api-5.png" alt="Descrição da imagem">
+  <summary>Processamento e Agregação de Dados de Radares (Backend)</summary>
   <br>
-Implementei no AuthenticationController um mecanismo de controle de tentativas de login com o objetivo de reforçar a segurança contra acessos indevidos. A lógica utiliza um ConcurrentHashMap para registrar dinamicamente o número de tentativas falhas por e-mail, sendo incrementado a cada falha por meio de um AtomicInteger. Ao atingir o limite de três tentativas consecutivas (definido por MAX_ATTEMPTS), o sistema remove o contador associado ao e-mail e aciona o EmailService para enviar automaticamente uma notificação ao usuário, alertando-o sobre possíveis acessos não autorizados. Essa estratégia atua como uma medida preventiva, promovendo maior proteção das contas de usuário e facilitando a detecção de atividades suspeitas.
+No desenvolvimento do Backend em Java (Spring Boot), fui o autor do `ReadingServiceImpl`. Fui responsável por toda a lógica de agregação das leituras de velocidade dos radares (ReadingGroupAggregate). Desenvolvi as rotinas de busca que consultam dinamicamente janelas de tempo, agrupando dados massivos diretamente no banco de dados para evitar problemas de OutOfMemory e garantir respostas de alta performance para a API.
 </details>
 
 <details>
-  <summary>Envio de emails</summary>
-  <img src="./assets/email-api-5.png" alt="Descrição da imagem">
+  <summary>Cálculo de Índices de Tráfego e Segurança (Backend)</summary>
   <br>
-Desenvolvi o CompanyController para gerenciar as operações relacionadas às empresas em nossa aplicação. Esse controlador REST segue o padrão arquitetural RESTful, que permite que o frontend e outras aplicações se comuniquem com o backend de forma simples e padronizada através de requisições HTTP.
-
-Utilizando anotações como @RestController e @RequestMapping com o caminho "/company", defini claramente o ponto de entrada das requisições relacionadas a empresas. Essa organização facilita a manutenção e escalabilidade do sistema, agrupando as funcionalidades por domínio.
-
-O método getAllCompanies foi projetado para recuperar de forma paginada todas as empresas registradas no sistema. Isso garante eficiência na busca e na exibição dos dados, especialmente em cenários com um grande volume de registros. A resposta retorna um Page de CompanyDTO, promovendo uma camada de segurança e desacoplamento entre a entidade de banco e os dados expostos ao cliente.
-
-A integração com o Swagger por meio das anotações @Operation e @ApiResponses fornece uma documentação clara e automática da API. Isso é essencial para o entendimento e consumo da API por outros desenvolvedores, além de ajudar na validação e testes.
-
-A separação da lógica de negócios foi mantida com o uso de um serviço (CompanyService) e de um repositório (CompanyRepository), respeitando os princípios da arquitetura em camadas. Essa abordagem melhora a organização do código, facilita os testes e aumenta a coesão das responsabilidades de cada classe.
+Desenvolvi a inteligência do `IndexServiceImpl`, implementando algoritmos essenciais que calculam índices de tráfego e de segurança (classificados de 1 a 5) baseados na porcentagem de veículos acima do limite e no excesso médio de velocidade. Essa lógica fornece as métricas consolidadas por radar, região e endereço que alimentam diretamente os dashboards interativos e os mapas de calor do Frontend.
 </details>
 
 <details>
-  <summary>ETL - "Extract, Transform, Load"</summary>
-  <img src="./assets/etl-api-5.png" alt="Descrição da imagem">
+  <summary>Integração de APIs e Arquitetura Distribuída</summary>
   <br>
-Este módulo implementa a lógica principal do processo de ETL para arquivos Excel com múltiplas planilhas. Um dos pontos centrais está na função process_etl, que executa a transformação e carga dos dados de cada aba com base nas regras definidas em um mapeamento JSON.
-
-A lógica percorre linha a linha dos dados, limpando e padronizando colunas (como capitalização e números de telefone), tratando valores nulos e validando coerência entre colunas de datas (por exemplo, impedindo que uma data de início seja maior que a de fim). Caso haja inconsistências ou erros de integridade na inserção no banco via SQLAlchemy, esses registros são armazenados em logs específicos por tabela e não interrompem o fluxo.
-
-Além disso, o script gera um arquivo de log em JSON contendo os erros e mensagens de sucesso e move os arquivos processados para a pasta de concluídos ou, em caso de erro, para a pasta de erros. O controle automático é ativado por meio da classe ExcelFileEventHandler, que detecta novos arquivos .xlsx no diretório monitorado e dispara o ETL automaticamente.
+Atuei fortemente para garantir que a comunicação entre a interface do usuário (Vue.js no Frontend) e os serviços pesados de processamento (Spring Boot no Backend) ocorresse de maneira robusta. Modelei e expus os endpoints RESTful consumidos pelo Frontend, assegurando o tráfego correto das informações agregadas de mobilidade.
 </details>
-
-
 
 #### Hard Skills
 
-- **Java** : Sei fazer com autonomia
-- **Springboot** : Sei fazer com autonomia
-- **Postgresql** : Sei fazer com ajuda
+- **Java / Spring Boot** : Sei fazer com autonomia
+- **PostgreSQL / Oracle** : Sei fazer com autonomia
+- **Vue.js / Vuetify** : Sei fazer com ajuda
+- **Docker** : Sei fazer com ajuda
 
 #### Soft Skills
 
-**Autonomia e Proatividade**: Desde a leitura do Excel até a carga no banco Postgresql, todo o processo foi estruturado de forma automática. Configurei um observador de arquivos com o Watchdog para monitorar a chegada de novos arquivos e iniciar o pipeline sem intervenção manual. Além disso, estruturei logs de erro por tabela, com mensagens explicativas, e movimentei os arquivos entre pastas (concluídos, com erro, etc.), demonstrando iniciativa para tornar o processo fluido, robusto e escalável.
+**Pensamento Analítico**: Diante do desafio de processar grandes volumes de leituras de radares, analisei o gargalo de performance e refatorei o cálculo dos índices de tráfego e segurança para utilizar queries agregadas no banco de dados, em vez de processar os dados em memória (RAM), melhorando drasticamente a estabilidade do sistema.
 
-**Pensamento Analítico** : Durante o desenvolvimento do pipeline de ETL, enfrentei o desafio de lidar com diversas abas de um arquivo Excel contendo dados heterogêneos. Implementei uma lógica de validação de datas entre colunas relacionadas (como início e fim de processos), além de aplicar tratamentos específicos para campos como telefone, garantindo consistência antes da carga no banco de dados. Essa capacidade analítica foi fundamental para antecipar possíveis falhas de integridade nos dados e garantir a confiabilidade do
+**Visão Sistêmica**: Compreendi de ponta a ponta a arquitetura do projeto (dividido em Backend e Frontend). Estruturei os dados agregados no servidor (Spring Boot) de forma que fossem facilmente consumíveis e eficientes para alimentar as telas interativas e mapas de calor no cliente (Vue.js).
 
-**Organização**: Implementei um mapeamento externo via JSON para tornar o sistema flexível e facilitar a manutenção de colunas e tabelas. Além disso, cada tentativa de inserção é monitorada com tratamento de exceções SQL, permitindo identificar erros de chave primária, dados inconsistentes e outros problemas com clareza. Esse cuidado reflete meu comprometimento com a qualidade da solução e a facilidade de diagnóstico e correção de erros no ambiente produtivo.
-
-
-
+**Trabalho em Equipe**: Com a divisão clara entre Backend e Frontend, atuei de forma colaborativa alinhando os contratos (DTOs e Endpoints) com os desenvolvedores do Frontend, assegurando que as entregas do servidor atendessem às necessidades visuais exigidas pela Prefeitura de SJC.
 
 ### Em 2025-1 
 
