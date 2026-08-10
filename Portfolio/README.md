@@ -78,7 +78,6 @@ A equipe propôs e desenvolveu uma aplicação que tem como finalidade fornecer 
 **Autodidatismo** : Demonstrei proatividade ao buscar e adquirir conhecimentos sobre tecnologias novas, como Flask, que não tinha familiaridade anteriormente. 
 
 ### Em 2024-1
-![banner-api-3](./assets/SQLBot.png)
 
 ## Aplicação para conversão de linguagem natural para comandos SQL
 
@@ -100,7 +99,6 @@ A equipe propôs uma aplicação que permite acessar informações de um banco d
 > - **LM Studio**: Aplicação desktop para gerenciar modelos de linguagem em execução local.
 > - **Figma**: Ferramenta de design colaborativo para prototipagem e validação ágil do design com o cliente.
 > - **Ollama**: Framework para gerenciamento e execução local de modelos de linguagem.
-<!-- > - **Git e Github**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte. -->
 
 #### Contribuições Pessoais
 
@@ -112,107 +110,77 @@ Como desenvolvedor, fiz:
 #### Hard Skills
 
 - **Java** : Sei fazer com autonomia
-- **JavaFx** : Sei fazer com ajuda
-- **Git/Github** : Sei fazer com ajuda
+- **Swing** : Sei fazer com ajuda
 - **MySQL** : Sei fazer com ajuda
 
 #### Soft Skills
 
-**Autodidatismo** : Por ser uma nova tecnologia, tive que aprender ao decorrer do semestre como utiliza-la para ter o sucesso do projeto 
-
-**Colaboração**
-Em momentos que alguém do time estava com dificuldades ou problemas em sua task, acabei por ajudar ou realizar a task para que assim, tivesse-mos sucesso na sprint
+**Colaboração**: A colaboração foi essencial para o sucesso do projeto, pois permitiu que todos os membros da equipe compartilhassem conhecimentos, tirassem dúvidas e trabalhassem juntos na resolução de problemas, garantindo que o projeto fosse entregue dentro do prazo estabelecido.
 
 ### Em 2023-2 
-![banner-api-3](./assets/banner-gerenciador-hora-extra.png)
 
-## Projeto de Desenvolvimento de Sistema de Gestão de Horas Extras e Sobreavisos
+## Dashboard para Feedback e Pesquisa de Clima e Cultura de equipes
 
-### Empresa Parceira: [2RP](https://2rpnet.com.br/)
+### Empresa Parceira: [Youtan](https://youtan.com.br/)
 
 ### Problema:
-A empresa enfrentava dificuldades na gestão eficiente das horas extras e sobreavisos dos colaboradores. O processo manual de registro e aprovação dessas horas era moroso e propenso a erros, resultando em atrasos no pagamento e insatisfação dos funcionários. Além disso, não havia um sistema centralizado para acompanhar e analisar essas informações, dificultando a tomada de decisões estratégicas por parte da gestão.
+A empresa parceira vem enfrentando dificuldades para registrar a auto avalição e avaliação dos membros de suas equipes uma vez que suas equipes se tornaram maiores e mais dispersas. Para enfrentar esse desafio, a empresa está em busca de um Dashboard para Feedback e Pesquisa de Clima e Cultura de equipes.
 
 ### Solução Entregue pela Equipe:
-Nossa equipe desenvolveu um sistema de gestão de horas extras e sobreavisos sob medida para as necessidades da empresa. O sistema permite que os colaboradores e gestores registrem e acompanhem suas horas extras e sobreavisos de forma intuitiva e eficiente. Os administradores têm acesso a ferramentas avançadas de parametrização, que permitem padronizar o sistema com valores a serem pagos pelas horas extras.
+A equipe propôs um dashboard para feedback e pesquisa de clima e cultura, que permitiu a automação e a aceleração na aplicação das pesquisas no sistema. Para isto, foi criada uma plataforma onde o RH pode cadastrar perguntas para categorizar a resposta de líderes, liderados e autoavaliações para monitorar a evolução individual e coletiva.
 
-O sistema também automatiza o processo de aprovação, encaminhando as horas registradas para os gestores e administradores responsáveis, agilizando assim o pagamento e garantindo a conformidade com as políticas internas da empresa. Com uma interface amigável e recursos de relatórios integrados, o sistema oferece uma visão abrangente e em tempo real das horas trabalhadas, facilitando a análise e a tomada de decisões pelos gestores.
-
-[Repositório do Projeto ](https://github.com/codecatss/API-BD3)
+[Repositório do Projeto ](https://github.com/gabrielvascf/fatec-api-ads-3)
 
 #### Tecnologias Utilizadas
 >
-
-> - **Java**: Essencial para o desenvolvimento do backend do sistema de gestão de horas extras e sobreavisos.
-> - **Spring Boot**: Facilita a configuração e o desenvolvimento de aplicativos Java, permitindo uma rápida implementação de serviços web e RESTful.
-> - **JavaScript**: Utilizado para desenvolver a lógica do lado do cliente, interatividade e dinamismo na interface do usuário.
-> - **Hibernate**: Fornece uma camada de mapeamento objeto-relacional para o banco de dados, simplificando a interação com o banco de dados relacional.
-> - **Docker**: Utilizado para empacotar, distribuir e executar aplicativos em contêineres, garantindo consistência e portabilidade do ambiente de desenvolvimento para produção.
-> - **Git e Github**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
-> - **HTML**: Responsável pela estruturação do conteúdo da página web.
-> - **CSS**: Utilizado para estilizar e formatar o layout da página web, garantindo uma experiência visual agradável para o usuário.
-
+> - **TypeScript**: Utilizado para desenvolver a lógica de negócio no backend e a interatividade no frontend.
+> - **Node.js**: Plataforma utilizada para a construção e execução dos serviços do backend da aplicação.
+> - **React**: Biblioteca JavaScript utilizada para a criação das interfaces de usuário e componentes dos dashboards.
+> - **MySQL**: Banco de dados relacional utilizado para armazenamento persistente e consultas eficientes dos dados das pesquisas.
 
 #### Contribuições Pessoais
 
 <details>
-  <summary>Configuração do método GET no "/cr"</summary>
-  <img src="./assets/restController.png" alt="Descrição da imagem">
+  <summary>Desenvolvimento do Backend de Pesquisas e Dashboards</summary>
   <br>
-DDesenvolvi o CenterResultController para gerenciar os resultados dos centros em nossa aplicação. Este controlador REST opera sobre o protocolo HTTP, que é a base da comunicação na web, permitindo que clientes e servidores se comuniquem. No contexto REST (Representational State Transfer), que é um estilo arquitetural para sistemas distribuídos, o CenterResultController lida com requisições HTTP para salvar e recuperar informações dos centros de resultados.
-
-Ao utilizar anotações como @RestController e @RequestMapping, defini a classe como um controlador e mapeei as requisições para o caminho "cr", tornando mais claro o acesso aos recursos relacionados aos centros de resultados.
-
-O método saveCenterResult foi projetado para garantir que todas as informações necessárias sejam fornecidas antes de salvar um centro de resultado, o que ajuda a prevenir duplicatas e erros de dados. Enquanto isso, o método getAll é responsável por recuperar uma lista de todos os centros de resultados, facilitando a visualização e o gerenciamento desses dados.
-
-A anotação @CrossOrigin é uma medida de segurança que permite que a API seja acessada de diferentes origens, o que é fundamental para a integração com outras partes do sistema ou aplicações de terceiros. Isso ajuda a evitar problemas de segurança, ao mesmo tempo em que possibilita uma maior flexibilidade na interação com a API.
+Fui responsável por estruturar e corrigir a lógica de serviços no backend utilizando Node.js e TypeScript, especificamente nos serviços `dashboardService` e `surveyService`. Implementei a lógica de negócio para manipulação das pesquisas, processamento das avaliações de conjunto e autoavaliações, garantindo que os dados fossem corretamente validados, salvos e expostos pela API.
 </details>
 
 <details>
-  <summary>Configuração Do Swagger </summary>
-  <img src="./assets/codigoSwagger.png" alt="Descrição da imagem">
+  <summary>Implementação e Integração das Rotas da API</summary>
   <br>
- Desenvolvi a configuração do Swagger como parte do processo de criação. Essa experiência me proporcionou uma compreensão mais profunda do funcionamento das APIs RESTful e da importância da documentação precisa. O Swagger é uma ferramenta essencial para criar e visualizar a documentação de APIs de forma clara e acessível. Ele permite que desenvolvedores e usuários finais entendam facilmente os endpoints disponíveis, os parâmetros necessários e os formatos de resposta esperados. Além disso, o Swagger oferece uma interface interativa que possibilita testar as funcionalidades da API diretamente na documentação, simplificando o processo de desenvolvimento e garantindo uma melhor experiência para os usuários.
+Criei e configurei endpoints REST, como o `dashboardController`, garantindo o tráfego seguro de informações essenciais entre cliente e servidor. Lidei também com o tratamento de erros e tipagem estrita para maior robustez da aplicação.
 </details>
 
 <details>
-  <summary>Configuração Do Token Service</summary>
-  <img src="./assets/TokenService.png" alt="Descrição da imagem">
+  <summary>Integração de Dashboards no Frontend</summary>
   <br>
-Desenvolvi o arquivo TokenService.java, uma peça fundamental na estrutura da nossa aplicação API3SEM. Este serviço desempenha um papel central na geração e validação de tokens JWT, fortalecendo a segurança do processo de autenticação dos usuários. Por meio dele, somente usuários autenticados têm permissão para acessar funcionalidades específicas da nossa API, garantindo, assim, a proteção de dados sensíveis e a privacidade dos nossos clientes.
+No frontend, atuei ativamente na integração das páginas dos dashboards e na visualização de pesquisas utilizando React e TypeScript. Dediquei-me à resolução de bugs complexos, como a correta separação entre avaliações pendentes e já respondidas, assegurando a confiabilidade dos dados apresentados aos usuários.
 </details>
 
-
-
 <details>
-  <summary>Configuração do filtro de horas</summary>
-  <img src="./assets/filtroControllerHora.png" alt="Descrição da imagem">
+  <summary>Modelagem e Estruturação do Banco de Dados</summary>
   <br>
-O método filtredHours que desenvolvi permite filtrar registros de horas em nossa API. Ele aceita parâmetros para identificar o tipo de filtro e a variável de busca. Dependendo do filtro, seja por gestor, matrícula, código de CR ou cliente, o método busca e retorna os registros relevantes. Se não encontrar registros ou ocorrer um erro, ele lança uma exceção com uma mensagem explicativa. Esse recurso facilita a busca de informações específicas pelos usuários.
+Fui o responsável por projetar e criar a estrutura do banco de dados relacional (MySQL) para o projeto. Desenvolvi o esquema, definindo as tabelas de usuários, pesquisas, questões e instâncias de pesquisas. Garantindo a integridade dos dados, as relações corretas entre as entidades e a otimização estrutural necessária para suportar os relatórios e a manipulação dinâmica das informações de avaliações e autoavaliações.
 </details>
 
 #### Hard Skills
 
-- **Java** : Sei fazer com autonomia
-- **Springboot** : Sei fazer com autonomia
-- **Javascript**: Sei Fazer com autonomia
-- **Html** : Sei Fazer com autonomia
-- **Css** : Sei Fazer com autonomia
-- **PostgreSQL** : Sei fazer com ajuda
+- **TypeScript** : Sei fazer com autonomia
+- **Node.js** : Sei fazer com autonomia
+- **React** : Sei fazer com autonomia
+- **MySQL** : Sei fazer com ajuda
 
 #### Soft Skills
 
-**Comunicação**: Exercitei minhas habilidades de comunicação ao interagir frequentemente com a equipe, transmitindo a visão do cliente e alinhando expectativas. Mantive um diálogo aberto e constante com o cliente para entender suas necessidades e garantir que as funcionalidades desenvolvidas atendessem às suas expectativas.
+**Comunicação**: A comunicação foi fundamental para o sucesso do projeto, pois permitiu que todos os membros da equipe tivessem clareza sobre os objetivos, tarefas e prazos, além de facilitar a resolução de problemas e a tomada de decisões em conjunto.
 
-**Autodidatismo** : Demonstrei proatividade ao buscar e adquirir conhecimentos sobre tecnologias novas, como Spring Boot, que não tinha familiaridade anteriormente. 
-
-**Trabalho sob pressão**: Em momentos de baixa de recursos no time, assumi mais responsabilidades do que o habitual para garantir que o projeto fosse entregue dentro do prazo estabelecido. 
+**Resiliência**: Enfrentei desafios técnicos e prazos apertados, aprendendo a gerenciar a pressão e a buscar soluções eficazes para os problemas que surgiram ao longo do projeto.
 
 
 
 
 ### Em 2023-2 
-![banner-api-3](./assets/banner-oracle.png)
 
 ## Oracle Partner Tracker
 
@@ -310,7 +278,6 @@ Essa abordagem melhora significativamente a usabilidade e integridade dos dados 
 
 
 ### Em 2024-2 
-![banner-api-3](./assets/pro4tech-overview.png)
 
 ## RecruitDash 
 
@@ -397,7 +364,6 @@ Além disso, o script gera um arquivo de log em JSON contendo os erros e mensage
 
 
 ### Em 2025-1 
-![banner-api-3](./assets/kersys_ltda_cover.jpeg)
 
 ## FloraTrack  
 
