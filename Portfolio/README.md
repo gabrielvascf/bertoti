@@ -1,15 +1,9 @@
 <h2>Sobre mim</h2>
 <p align="center"><img src="./assets/LinkedinPfp.jpeg" width="20%" style="border-radius: 50%; width: 150px; height: 150px; display: block; margin: 0 auto;"></p>
 
-Comecei minha carreira trabalhando com gestão de tráfego de dados, onde percebi o quanto a automação pode facilitar a organização e análise de informações. Isso despertou meu interesse pela programação, especialmente Python, que me mostrou as diversas oportunidades que esse campo oferece.
-
-Em 2022, dei um grande passo ao iniciar o curso de Banco de Dados na FATEC. Desde então, venho melhorando minhas habilidades em desenvolvimento de backend e administração de bancos de dados.
-
-Tenho experiência na construção de projetos web usando Java (SpringBoot) e JavaScript (Node.js, React.js, Typescript), sempre priorizando a experiência do usuário e buscando melhorar a performance e a qualidade do código.
-
-Já trabalhei em empresa como APTIV, uma empresa do segmento automotivo, onde pude trabalhar em um laboratório de engenharia. Minha função envolvia o uso de Python para automatizar máquinas, realizar testes de equipamentos e registrar informações.
-
-Além disso, também trabalho em outra empresa, onde utilizo desde ferramentas de low code até a codificação direta no desenvolvimento de demandas de produtos personalizados para empresas que entram em contato conosco.
+Descobri o mundo da programação quando tinha 14 anos, em um jogo chamado ROBLOX. Querendo me aprofundar nesse mundo, fiz um curso de Introdução à Robótica Utilizando Arduino no SENAI, e Automação Industrial pelo Instituto Federal de São Paulo, começando a arranhar a superfície antes de, no segundo semestre de 2023, ingressar como aluno de Análise e Desenvolvimento de Sistemas na FATEC.
+Cursei do primeiro até o quarto semestre (2025-1), e fiz a transfêrencia para o curso de Banco de Dados por preferência de horário, continuando a partir do quarto semestre.
+No segundo semestre de 2025, ingressei como aluno de Iniciação Científica no Centro de Competência em Manufatura do ITA, onde fiz a integração de simulações distribuídas utilizando MATLAB, Python e Unreal Engine.
 
 ## Contatos
 * [Git](https://github.com/gabrielvascf)
@@ -20,16 +14,17 @@ Além disso, também trabalho em outra empresa, onde utilizo desde ferramentas d
 **Aplicações e dados**
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
 ![Ollama](https://img.shields.io/badge/-Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
 
 ## Meus Projetos
@@ -70,8 +65,6 @@ A equipe propôs e desenvolveu uma aplicação que tem como finalidade fornecer 
 
 
 #### Soft Skills
-
-<!-- **Comunicação**: Comuniquei-me efetivamente com a equipe sobre os requisitos funcionais da aplicação e, conhecendo as limitações do Flask, propus o uso do JavaScript para mitigar as limitações das outras tecnologias. -->
 
 **Comunicação**: Exercitei minhas habilidades de comunicação ao interagir frequentemente com a equipe, transmitindo a visão do cliente e alinhando expectativas. Mantive um diálogo aberto e constante com o cliente para entender suas necessidades e garantir que as funcionalidades desenvolvidas atendessem às suas expectativas.
 
@@ -350,9 +343,3 @@ Implementei um sistema de exclusão de dados sensíveis conforme os princípios 
 **Visão Estratégica de Produto** : Estruturei o sistema com foco em sustentabilidade e conformidade legal, propondo soluções como a criptografia assimétrica para garantir anonimização de dados conforme a LGPD. Essa abordagem conectou as decisões técnicas aos objetivos maiores do projeto, como transparência ambiental e segurança de dados, antecipando riscos futuros e alinhando o produto às demandas do mercado.
 
 **Comunicação Eficaz**: Traduzi conceitos técnicos complexos, como encriptação e modelagem de dados ambientais, em histórias compreensíveis para todos os envolvidos no projeto. Isso possibilitou o entendimento claro das funcionalidades por parte dos desenvolvedores e facilitou a validação das entregas com stakeholders, garantindo assertividade e confiança no processo.
-
-
-
-
-
-
