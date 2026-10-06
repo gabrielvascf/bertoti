@@ -240,7 +240,7 @@ A Prefeitura necessitava de uma solução eficiente para consolidar e monitorar 
 ### Solução Entregue pela Equipe:
 Desenvolvemos o Painel de Mobilidade Urbana, uma plataforma web interativa que consolida dados de radares em dashboards dinâmicos. O projeto possui uma arquitetura distribuída, dividida claramente em um Backend (API RESTful) e um Frontend (Single Page Application). A solução diferencia acessos entre cidadãos (dados públicos) e gestores (dados sensíveis), apresentando filtros por região, mapas de calor e notificações automatizadas de tráfego.
 
-[Repositório do Projeto](https://github.com/SQLutions-FATEC/API-3-Semestre)
+[Repositório do Projeto](https://github.com/gabrielvascf/fatec-api-bd-4)
 
 #### Tecnologias Utilizadas
 >
@@ -286,60 +286,82 @@ Atuei fortemente para garantir que a comunicação entre a interface do usuário
 
 ### Em 2025-1 
 
-## FloraTrack  
+## Synthesi
 
-### Empresa Parceira: [Kersys](https://kersys.com.br/)
+### Empresa parceira: SIATT
 
-### Problema:
-Atualmente, não existe uma solução tecnológica centralizada e inteligente para o monitoramento e gestão eficiente de áreas reflorestadas. A ausência de ferramentas que integrem dados sobre saúde das árvores, captura de CO₂, qualidade do solo, biodiversidade e fontes de financiamento dificulta a tomada de decisões estratégicas. O uso de Inteligência Artificial é necessário para analisar esses dados em tempo real, prever tendências ambientais e otimizar os esforços de reflorestamento com base em insights automatizados. Uma API integrada com recursos de IA pode transformar a forma como esses projetos são acompanhados e aprimorados.
+### Problema
+Os dados de programas e projetos estavam dispersos em diferentes sistemas e bases de dados, dificultando a análise e o acompanhamento da operação. Sem uma visão centralizada, gestores tinham mais dificuldade para consultar custos, horas trabalhadas, tarefas, compras, estoque e fornecedores, além de identificar atrasos e necessidades de materiais.
 
-### Solução Entregue pela Equipe:
-O projeto tem como objetivo principal desenvolver uma API inteligente voltada para a gestão de áreas reflorestadas, integrando dados ambientais e financeiros de forma centralizada. Com o uso de Inteligência Artificial, a solução permitirá monitorar a captura de CO₂, a qualidade do solo e a sobrevivência das árvores, fornecendo análises preditivas e recomendações automatizadas. A API também facilitará o controle e a transparência das fontes de financiamento, bem como a avaliação da biodiversidade ao longo do tempo. Além disso, possibilitará a comparação entre áreas reflorestadas de diferentes regiões e biomas, contribuindo para uma tomada de decisão mais eficiente e sustentável.
+### Solução Entregue pela Equipe
+O Synthesi é uma aplicação web que centraliza, organiza e transforma dados de projetos em informações para apoiar a tomada de decisão. A solução utiliza uma arquitetura de Data Warehouse, com um processo de ETL para importar e normalizar arquivos CSV em tabelas de dimensão e de fatos.
 
-[Repositório do Projeto ](https://github.com/Localhost-308/API-BD6)
+Na aplicação, é possível:
+
+- consultar programas e projetos em uma visão centralizada, com busca e filtros;
+- acompanhar tarefas, horas trabalhadas, custos de materiais e produtividade;
+- visualizar solicitações, pedidos de compra, status de entrega e alertas de atraso;
+- consultar o estoque de materiais e identificar possíveis faltas;
+- pesquisar fornecedores por dados como categoria, cidade, prazo e histórico de entregas;
+- importar dados de novos projetos a partir de arquivos CSV.
+
+[Repositório do projeto](https://github.com/gabrielvascf/fatec-api-bd-5)
 
 #### Tecnologias Utilizadas
->
 
-> - **Python**: Essencial para o desenvolvimento do backend do sistema de gestão de áreas reflorestadas
-> - **Flask**: Facilita a configuração e o desenvolvimento de aplicativos Python, permitindo uma rápida implementação de serviços web e RESTful.
-> - **React**: Utilizado para desenvolver a lógica do lado do cliente, interatividade e dinamismo na interface do usuário.
-
-> - **Git e Github**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
-
-> - **Postgresql**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
-
+- **Python e Django**: desenvolvimento do backend, da API e das regras de negócio.
+- **PostgreSQL**: armazenamento dos dados da aplicação e do Data Warehouse.
+- **React e TypeScript**: construção da interface web e das telas de acompanhamento.
+- **Material UI e Recharts**: componentes visuais, tabelas e gráficos analíticos.
+- **ETL**: extração, limpeza, validação e carga dos dados originados em arquivos CSV.
+- **Data Warehouse**: modelagem dimensional com dimensões de projeto, programa, tarefa, material, fornecedor e data, além das tabelas fato de tarefas, empenhos e compras.
 
 
 #### Contribuições Pessoais
 
 <details>
-  <summary>Foco Total no Produto</summary>
-  <img src="./assets/backlog.png" alt="Descrição da imagem">
+  <summary>Backend, API e modelagem de dados</summary>
   <br>
-Como Product Owner (PO) no desenvolvimento da API para gestão de áreas reflorestadas, atuei diretamente na definição e priorização dos requisitos do produto, garantindo o alinhamento entre os objetivos ambientais e as entregas técnicas. Conduzi reuniões semanais com a equipe para revisar o backlog, validar funcionalidades e adaptar as demandas conforme o feedback contínuo dos stakeholders. Trabalhei ativamente na elaboração de histórias de usuário com critérios de aceitação claros, facilitando a implementação eficiente de recursos como monitoramento de CO₂, análise de biodiversidade e visualização de dados. Essa atuação estratégica permitiu manter o foco no valor entregue, assegurando que a solução final fosse funcional, escalável e aderente às necessidades reais do projeto.
+Atuei na construção do backend em Django, participando da definição dos models relacionais, da migração inicial e da implementação de endpoints para dashboard de projetos, empenho de materiais, evolução financeira e busca de projetos. Também contribuí para a organização das regras de consulta da API, incluindo filtros e agregações utilizados pelas telas de acompanhamento.
 </details>
 
 <details>
-  <summary>Sistema e Exclusão LGPD</summary>
-  <img src="./assets/lgpd.png" alt="Descrição da imagem">
+  <summary>Funcionalidades do Frontend</summary>
   <br>
-Implementei um sistema de exclusão de dados sensíveis conforme os princípios da LGPD, utilizando criptografia assimétrica para garantir o sigilo das informações pessoais dos usuários. Com o módulo EncryptionService, desenvolvi uma rotina de geração de chaves RSA únicas para cada usuário no momento do cadastro, armazenando apenas a chave pública para uso em criptografia. Dados confidenciais foram criptografados com essa chave pública, impossibilitando o acesso direto a eles. Para atender à exclusão definitiva exigida pela LGPD, bastava eliminar a chave privada associada ao usuário, tornando a reversão da criptografia tecnicamente inviável. Essa abordagem assegura a irreversibilidade do processo de anonimização e reforça o compromisso do sistema com a privacidade e segurança da informação.
+Desenvolvi funcionalidades da interface em React e TypeScript, incluindo as telas de listagem de programas e projetos, a navegação utilizando os identificadores nas URLs, opções de retorno entre as telas e o acompanhamento de tarefas e horas trabalhadas na visão geral do projeto. Também implementei a tela de fornecedores, sua entrada na navegação lateral e a integração do envio de arquivos CSV com o backend.
 </details>
 
+<details>
+  <summary>Data Warehouse e documentação técnica</summary>
+  <br>
+Atuei na definição e documentação do modelo dimensional do projeto. Estruturei as dimensões e tabelas fato do Data Warehouse, incluindo os relacionamentos entre projetos, programas, tarefas, solicitações, materiais, fornecedores, compras e a dimensão de datas. Desenvolvi e mantive o diagrama da arquitetura e atualizei sua representação em DBML para manter o código sincronizado com o modelo visual, além de documentar o fluxo de dados desde os arquivos CSV até o consumo pela API.
+</details>
 
+<details>
+  <summary>Seeds, fixtures e testes automatizados</summary>
+  <br>
+Implementei e evoluí scripts de seed dinâmico e comandos para geração e extração de fixtures, permitindo preparar bases de teste com dados consistentes. No backend, criei testes para rotas e comandos de migração e utilizei fixtures para reduzir duplicação nos cenários de teste. No frontend, configurei o Vitest, criei testes para componentes de seleção, fornecedores e importação de CSV e corrigi comportamentos assíncronos nos testes de acompanhamento de horas.
+</details>
 
+<details>
+  <summary>DevOps e evolução do banco de dados</summary>
+  <br>
+Contribuí para estruturar o processo de evolução do banco desde a alteração dos models até a validação da entrega. Implementei a migração do ambiente de PostgreSQL para MySQL, atualizando a imagem Docker, o Docker Compose, as configurações de conexão, as migrações e o pipeline de análise. Também desenvolvi o comando de migração inteligente para inicializar bancos vazios e aplicar o schema correto, integrando essa rotina ao entrypoint da aplicação. O processo foi documentado com etapas de execução em containers, testes, Pull Requests, Code Review, GitHub Actions e SonarCloud.
+</details>
 
 #### Hard Skills
 
-- **Python** : Sei fazer com autonomia
-- **Flask** : Sei fazer com ajuda
-- **Postgresql** : Sei fazer com ajuda
+- **Python**: conhecimento com autonomia
+- **Django**: conhecimento com apoio
+- **PostgreSQL**: conhecimento com apoio
+- **Data Warehouse e modelagem dimensional**: conhecimento com autonomia
+- **DBML e documentação de bancos de dados**: conhecimento com autonomia
+- **React e TypeScript**: conhecimento introdutório
 
 #### Soft Skills
 
-**Liderança Colaborativa:**: Atuei como Product Owner liderando as definições e o direcionamento do projeto, facilitando a comunicação entre equipe técnica e os requisitos do cliente. Promovi reuniões constantes para alinhamento, definição de prioridades e acompanhamento do progresso, garantindo que todos estivessem engajados e focados em metas comuns. Essa atuação contribuiu diretamente para a entrega de um produto coerente e funcional.
+**Pensamento analítico:** transformei um problema de dados dispersos em uma estrutura dimensional que facilita consultas, comparações e acompanhamento de indicadores.
 
-**Visão Estratégica de Produto** : Estruturei o sistema com foco em sustentabilidade e conformidade legal, propondo soluções como a criptografia assimétrica para garantir anonimização de dados conforme a LGPD. Essa abordagem conectou as decisões técnicas aos objetivos maiores do projeto, como transparência ambiental e segurança de dados, antecipando riscos futuros e alinhando o produto às demandas do mercado.
+**Documentação técnica:** registrei o modelo, o fluxo de dados e os relacionamentos do Data Warehouse de forma alinhada ao diagrama e ao código.
 
-**Comunicação Eficaz**: Traduzi conceitos técnicos complexos, como encriptação e modelagem de dados ambientais, em histórias compreensíveis para todos os envolvidos no projeto. Isso possibilitou o entendimento claro das funcionalidades por parte dos desenvolvedores e facilitou a validação das entregas com stakeholders, garantindo assertividade e confiança no processo.
+**Colaboração:** contribuí para que a equipe tivesse uma referência comum para discutir a estrutura dos dados e a evolução da API.
