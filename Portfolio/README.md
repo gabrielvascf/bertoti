@@ -53,7 +53,11 @@ A equipe propôs e desenvolveu uma aplicação que tem como finalidade fornecer 
 
 <details>
   <summary>Atuei como desenvolvedor</summary>
-    Como desenvolvedor, criei a estrutura HTML base das páginas, a geração de rotas procedural utilizando o nome dos arquivos e a lógica dos questionários com JavaScript.
+    Como desenvolvedor, atuei na construção da interface e da navegação da plataforma. Criei e refinei a estrutura base das páginas com HTML, Jinja e CSS, organizei o layout compartilhado e implementei a geração procedural de rotas no Flask a partir dos nomes dos templates.
+
+    Também desenvolvi as páginas dedicadas aos papéis de Scrum Master e Developer Team, incluindo seus conteúdos, guias passo a passo, modais e estilos específicos. Contribuí para a adoção do Bootstrap, para a organização da navegação entre os artefatos do Scrum e para ajustes de usabilidade, como títulos das páginas, alinhamento de elementos e comportamento do menu.
+
+    Na etapa final, participei do refinamento dos questionários, ajustando a estrutura dos templates, a apresentação das perguntas e a validação do formulário do avaliador para evitar o envio sem o preenchimento dos critérios. As contribuições de lógica JavaScript do quiz foram realizadas por outros integrantes e, por isso, não são atribuídas a mim nesta descrição.
 </details>
 
 #### Hard Skills
@@ -95,10 +99,13 @@ A equipe propôs uma aplicação que permite acessar informações de um banco d
 
 #### Contribuições Pessoais
 
-Como desenvolvedor, fiz: 
-- A transformação das respostas do modelo de linguagem para exibição na tela;
-- A implementação regras CSS na interface de chat;
-- A otimização do uso de memória da aplicação por alocação dinâmica apenas dos modelos em uso.
+Como desenvolvedor, contribuí para a camada de apresentação, para a integração com os modelos de linguagem e para o refinamento da documentação do projeto:
+
+- Implementei o `DBResultFormatter`, responsável por transformar os resultados retornados pelo banco em HTML. Consultas com várias colunas passaram a ser exibidas em tabelas, enquanto consultas de uma única coluna passaram a ser apresentadas em formato de lista, incluindo o tratamento para consultas sem resultados.
+- Adicionei a aplicação de estilos CSS ao `JEditorPane` da interface de chat, definindo tipografia, bordas, espaçamento, largura das tabelas e alternância de cores nas linhas para melhorar a leitura das respostas.
+- Refatorei o `LMStudioService` para organizar a geração da consulta pelo modelo, a execução do SQL e o encaminhamento do resultado pelo formatador antes da exibição na interface.
+- Refatorei o `ChooseLLMService` para descobrir os modelos disponíveis por meio do comando do LM Studio, carregar somente o modelo selecionado e descarregá-lo ao retornar ou fechar a aplicação. Integrei esse fluxo às telas de seleção e de conversa, contribuindo para o uso mais controlado dos recursos da aplicação.
+- Atualizei o material visual do MVP e a tabela de backlog para refletir a evolução das entregas e das funcionalidades do SQL Bot.
 
 #### Hard Skills
 
